@@ -6,7 +6,17 @@ const Product = require("../models/productModel");
 // @access public
 
 const getAllProducts = asyncHandler(async (req, res) => {
-  const products = await Product.find({});
+  const categoryReq = req.query.category;
+  const priceReq = req.query.price;
+  let products;
+
+  if (categoryReq) {
+    products = await Product.find({
+      category: categoryReq,
+    });
+  } else {
+    products = await Product.find({});
+  }
   res.status(200).json(products);
 });
 
