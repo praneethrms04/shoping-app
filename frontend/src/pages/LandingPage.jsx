@@ -1,11 +1,13 @@
-import { Navbar, Footer, Products } from "../components";
 
+import { Navbar, Footer, Products, Category } from "../components";
 const LandingPage = () => {
+    
   return (
     <div>
       <Navbar />
+      {/* <Products /> */}
+      <Category />
       <Footer />
-      <Products />
     </div>
   );
 };
