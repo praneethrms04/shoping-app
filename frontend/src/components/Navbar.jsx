@@ -1,6 +1,5 @@
 import { logo } from "../assets";
 import { Link } from "react-router-dom";
-import { navLinks } from "../constants";
 
 const Navbar = () => {
   return (
@@ -11,13 +10,20 @@ const Navbar = () => {
           <p className="text-[18px] font-bold">Go-Shop</p>
         </Link>
         <ul className="sm:flex flex-row gap-10">
-          {navLinks.map((nav) => (
-            <li key={nav.id} className="">
-              <Link to={nav.id} className="hover:text-[#F97B22] text-[18px]">
-                {nav.title}
-              </Link>
-            </li>
-          ))}
+          <li className="">
+            <Link
+              to="/products"
+              className="hover:text-[#F97B22] text-[18px] m-3"
+            >
+              products
+            </Link>
+            <Link to="/cart" className="hover:text-[#F97B22] text-[18px] m-3">
+              Cart
+            </Link>
+            <Link to="/login" className="hover:text-[#F97B22] text-[18px] m-3">
+              Login
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>

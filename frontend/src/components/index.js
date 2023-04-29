@@ -1,6 +1,5 @@
 import Navbar from "./Navbar";
-import Products from "./Products";
 import Footer from "./Footer";
-import Category from "./Category";
+import Loader from "./Loader";
 
-export { Navbar, Products, Footer, Category };
+export { Navbar, Footer,  Loader};
