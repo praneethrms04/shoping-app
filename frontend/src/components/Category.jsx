@@ -35,12 +35,12 @@ const Category = () => {
           <div
             style={{ width: 15 + "rem", height: 8 + "rem" }}
             id="category"
-            onClick={() => updateProducts("cloths")}
+            onClick={() => updateProducts("electronics")}
             className="bg-slate-700 rounded-2xl text-white"
           >
             <div className="flex justify-center items-center">
               <div className="p-auto text-xl pt-10 hover:text-[#F97B22] ">
-                Mens Clothing
+                Electronics
               </div>
             </div>
           </div>
@@ -49,12 +49,12 @@ const Category = () => {
           <div
             style={{ width: 15 + "rem", height: 8 + "rem" }}
             id="category"
-            onClick={() => updateProducts("cloths")}
+            onClick={() => updateProducts("fashion")}
             className="bg-slate-700 rounded-2xl text-white"
           >
             <div className="flex justify-center items-center">
               <div className="p-auto text-xl pt-10  hover:text-[#F97B22] ">
-                Mens Clothing
+                Fashion
               </div>
             </div>
           </div>
@@ -63,12 +63,12 @@ const Category = () => {
           <div
             style={{ width: 15 + "rem", height: 8 + "rem" }}
             id="category"
-            onClick={() => updateProducts("cloths")}
+            onClick={() => updateProducts("kids")}
             className="bg-slate-700 rounded-2xl text-white"
           >
             <div className="flex justify-center items-center">
               <div className="p-auto text-xl pt-10  hover:text-[#F97B22] ">
-                Mens Clothing
+                Baby & kids
               </div>
             </div>
           </div>
@@ -77,12 +77,12 @@ const Category = () => {
           <div
             style={{ width: 15 + "rem", height: 8 + "rem" }}
             id="category"
-            onClick={() => updateProducts("cloths")}
+            onClick={() => updateProducts("sports")}
             className="bg-slate-700 rounded-2xl text-white"
           >
             <div className="flex justify-center items-center">
               <div className="p-auto text-xl pt-10  hover:text-[#F97B22] ">
-                Mens Clothing
+                Sports
               </div>
             </div>
           </div>
@@ -99,7 +99,7 @@ const Category = () => {
                 <img
                   src={product.imageUrl}
                   alt=""
-                  className="w-[200px]  h-full object-cover rounded-2xl"
+                  className="w-[200px]  h-[280px] object-cover rounded-2xl"
                 />
               </div>
               <p className=" text-[#00235B] font-bold text-center pt-2">
@@ -110,9 +110,9 @@ const Category = () => {
                 <span className="text-[#245953]"> {product.price}</span>
               </p>
               <div className="">
-                <p className="font-bold  text-left">Product Details :</p>
+                <p className="font-bold  text-left"></p>
                 <span className="w-[200px] ">
-                  {product.description.substring(0, 150)}
+                  {product.description.substring(0, 130)}
                 </span>
               </div>
             </div>
