@@ -1,4 +1,4 @@
-import { Footer, Navbar } from "../components";
+import {  Navbar } from "../components";
 import {Link} from 'react-router-dom'
 const Authentication = () => {
   return (
@@ -10,7 +10,7 @@ const Authentication = () => {
         <button className="bg-[#D8D8D8] rounded-lg p-2">Go To Home</button>
         </Link>
       </div>
-      <Footer />
+      
     </>
   );
 };

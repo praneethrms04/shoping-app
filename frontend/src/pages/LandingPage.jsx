@@ -1,4 +1,4 @@
-import { Navbar, Footer,Loader } from "../components";
+import { Navbar, Footer, Loader } from "../components";
 import { useEffect, useState } from "react";
 import { getAllproducts } from "../api/products";
 
@@ -127,7 +127,9 @@ const LandingPage = () => {
           </div>
         )}
       </div>
-      <Footer />
+      <div className="fixed bottom-0 w-full">
+        <Footer />
+      </div>
     </div>
   );
 };
