@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(cors());
 
 app.route("/").get((req, res) => {
-  res.json({ message: "I am Home route" });
+  res.json({ message: "I am Home route...." });
 });
 
 app.use("/api/v1/products", require("./routes/productsRoutes"));
